@@ -1,0 +1,39 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "433224",
+    "description": "",
+    "name": "echobot"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnUnknownIntent",
+      "$designer": {
+        "id": "821845",
+        "name": "Echo Intent"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "003038"
+          },
+          "activity": "${SendActivity_003038()}"
+        },
+        {
+          "$kind": "Microsoft.LogAction",
+          "$designer": {
+            "id": "mEkiLu"
+          },
+          "text": "${LogAction_Text_mEkiLu()}"
+        }
+      ]
+    }
+  ],
+  "generator": "echobot.lg",
+  "$schema": "https://raw.githubusercontent.com/microsoft/BotFramework-Composer/stable/Composer/packages/server/schemas/sdk.schema",
+  "id": "echobot",
+  "recognizer": "echobot.lu.qna"
+}

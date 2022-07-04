@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.LuisRecognizer",
+  "id": "LUIS_echobot",
+  "applicationId": "=settings.luis.echobot_es_co_lu.appId",
+  "version": "=settings.luis.echobot_es_co_lu.version",
+  "endpoint": "=settings.luis.endpoint",
+  "endpointKey": "=settings.luis.endpointKey"
+}

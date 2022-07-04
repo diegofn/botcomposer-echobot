@@ -1,0 +1,14 @@
+[import](common.lg)
+
+# SendActivity_Welcome
+- ${WelcomeUser()}
+
+# SendActivity_003038()
+- ACK: You said '${turn.activity.text}'
+# LogAction_Text_mEkiLu()
+[Activity
+    Text = ${LogAction_Text_mEkiLu_text()}
+]
+
+# LogAction_Text_mEkiLu_text()
+- Log to console
